@@ -1,0 +1,32 @@
+.App {
+  margin: auto;
+  max-width: 320px;
+}
+
+.App-title {
+  margin-bottom: 2rem;
+  margin-top: 0;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,.12);
+}
+
+.App-footer {
+  border-top: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.7);
+  font-size: .875rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.App-footer a {
+  color: rgba(255,255,255,.7);
+}
+
+.App-footer a:hover {
+  color: rgb(255,255,255);
+}
+
+.App-footer > span {
+  display: inline-block;
+  width: 50%;
+}
