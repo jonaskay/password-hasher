@@ -1,9 +1,8 @@
 # Password Hasher
 
-Convert your password into a domain-specific password. 
+Convert your password into a domain-specific password. Password Hasher is live at <https://password-hasher.herokuapp.com/>!
 
 This project is a PWA implementation of [Remote PwdHash](https://crypto.stanford.edu/PwdHash/RemotePwdHash/). To learn more about web password hashing and Stanford PwdHash, check out <https://crypto.stanford.edu/PwdHash/>.
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
