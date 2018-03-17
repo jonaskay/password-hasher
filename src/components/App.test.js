@@ -25,7 +25,7 @@ describe('<App />', () => {
 
   it('handles a form submit', () => {
     mounted.find('form').simulate('submit');
-    expect(mounted.state().result).toBe('password');
+    expect(mounted.state().result).toMatchSnapshot();
   });
 });
 

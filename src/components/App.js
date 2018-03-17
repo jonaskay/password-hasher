@@ -32,7 +32,7 @@ class App extends Component {
   handleFormSubmit(event) {
     const domain = this.extractDomain(this.state.domain);
     const result = this.hashPassword(this.state.password, domain);
-    this.setState({ result: 'password' });
+    this.setState({ result: result });
     event.preventDefault();
   }
 
