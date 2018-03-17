@@ -4,6 +4,7 @@ import PasswordForm from './PasswordForm';
 
 describe('PasswordForm', () => {
   it('renders correctly', () => {
-    expect(shallow(<PasswordForm />)).toMatchSnapshot();
+    const shallowed = shallow(<PasswordForm />);
+    expect(shallowed).toMatchSnapshot();
   });
 });

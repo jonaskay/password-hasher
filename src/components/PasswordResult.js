@@ -5,7 +5,7 @@ class PasswordResult extends Component {
   render() {
     return (
       <div className="PasswordResult">
-        <input type="text" value="4QAIn8SvaW" />
+        <input type="text" value={this.props.result} />
       </div>
     );
   }

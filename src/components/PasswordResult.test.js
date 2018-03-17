@@ -4,6 +4,6 @@ import PasswordResult from './PasswordResult';
 
 describe('PasswordResult', () => {
   it('renders correctly', () => {
-    expect(shallow(<PasswordResult />)).toMatchSnapshot();
+    expect(shallow(<PasswordResult result="foobar" />)).toMatchSnapshot();
   });
 });

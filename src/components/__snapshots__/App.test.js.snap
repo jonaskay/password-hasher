@@ -9,8 +9,13 @@ exports[`App renders correctly 1`] = `
   >
     Password Hasher
   </h1>
-  <PasswordForm />
-  <PasswordResult />
+  <PasswordForm
+    onChange={[Function]}
+    onSubmit={[Function]}
+  />
+  <PasswordResult
+    result=""
+  />
   <footer
     className="App-footer"
   >
