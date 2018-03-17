@@ -34,3 +34,9 @@ describe('extractDomain', () => {
     expect(mounted.instance().extractDomain('http://foobar.example.org')).toBe('example.org');
   });
 });
+
+describe('hashPassword', () => {
+  it('hashes a password with salt', () => {
+    expect(mounted.instance().hashPassword('foo', 'bar')).toMatchSnapshot();
+  });
+});

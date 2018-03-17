@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SPH_DomainExtractor from '../domain-extractor';
+import SPH_HashedPassword from '../hashed-password';
 import PasswordForm from './PasswordForm';
 import PasswordResult from './PasswordResult';
 
@@ -16,6 +17,10 @@ class App extends Component {
     return (new SPH_DomainExtractor()).extractDomain(uri);
   }
 
+  hashPassword(str, salt) {
+    return (new String(new SPH_HashedPassword(str, salt)));
+  }
+
   handleInputChange(event) {
     const target = event.target;
     const value = target.value;
@@ -26,6 +31,7 @@ class App extends Component {
 
   handleFormSubmit(event) {
     const domain = this.extractDomain(this.state.domain);
+    const result = this.hashPassword(this.state.password, domain);
     this.setState({ result: 'password' });
     event.preventDefault();
   }

@@ -44,3 +44,13 @@ exports[`<App /> renders correctly 1`] = `
   </footer>
 </div>
 `;
+
+exports[`hashPassword hashes a password with salt 1`] = `
+String {
+  "0": "H",
+  "1": "h",
+  "2": "8",
+  "3": "N",
+  "4": "D",
+}
+`;
