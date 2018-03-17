@@ -4,7 +4,7 @@ import App from './App';
 
 const mounted = mount(<App />);
 
-describe('App', () => {
+describe('<App />', () => {
   it('renders correctly', () => {
     expect(shallow(<App />)).toMatchSnapshot();
   });
@@ -26,5 +26,11 @@ describe('App', () => {
   it('handles a form submit', () => {
     mounted.find('form').simulate('submit');
     expect(mounted.state().result).toBe('password');
+  });
+});
+
+describe('extractDomain', () => {
+  it('extracts a domain from URI', () => {
+    expect(mounted.instance().extractDomain('http://foobar.example.org')).toBe('example.org');
   });
 });
