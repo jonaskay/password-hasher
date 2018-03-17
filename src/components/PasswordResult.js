@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import './HashedPassword.css';
+import './PasswordResult.css';
 
-class HashedPassword extends Component {
+class PasswordResult extends Component {
   render() {
     return (
-      <div className="HashedPassword">
+      <div className="PasswordResult">
         <input type="text" value="4QAIn8SvaW" />
       </div>
     );
   }
 }
 
-export default HashedPassword;
+export default PasswordResult;

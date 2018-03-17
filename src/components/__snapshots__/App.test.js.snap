@@ -10,7 +10,7 @@ exports[`App renders correctly 1`] = `
     Password Hasher
   </h1>
   <PasswordForm />
-  <HashedPassword />
+  <PasswordResult />
   <footer
     className="App-footer"
   >

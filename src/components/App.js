@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import PasswordForm from './PasswordForm';
-import HashedPassword from './HashedPassword';
+import PasswordResult from './PasswordResult';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <h1 className="App-title">Password Hasher</h1>
         <PasswordForm />
-        <HashedPassword />
+        <PasswordResult />
         <footer className="App-footer">
           <span>&copy; 2018 <a href="https://github.com/jonaskay">Jonas Kay</a></span>
           <span style={{textAlign: 'right'}}>
