@@ -14,3 +14,8 @@ a {
 a:hover {
   color: rgb(255,255,255);
 }
+
+::-webkit-input-placeholder { color: rgba(0,0,0,.38); }
+::-moz-placeholder { color: rgba(0,0,0,.38); }
+:-ms-input-placeholder { color: rgba(0,0,0,.38); }
+:-moz-placeholder { color: rgba(0,0,0,.38); }

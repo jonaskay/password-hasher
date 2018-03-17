@@ -10,6 +10,7 @@ class PasswordForm extends Component {
           <input 
             type="text" 
             name="domain" 
+            placeholder="www.example.org"
             value={this.props.domain} 
             onChange={this.props.onChange} />
         </div>     
