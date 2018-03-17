@@ -10,6 +10,16 @@ String {
 }
 `;
 
+exports[`<App /> handles an empty form submit 1`] = `
+String {
+  "0": "B",
+  "1": "f",
+  "2": "q",
+  "3": "9",
+  "4": "R",
+}
+`;
+
 exports[`<App /> renders correctly 1`] = `
 <div
   className="App"

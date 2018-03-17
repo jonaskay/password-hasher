@@ -27,6 +27,16 @@ describe('<App />', () => {
     mounted.find('form').simulate('submit');
     expect(mounted.state().result).toMatchSnapshot();
   });
+
+  it('handles an empty form submit', () => {
+    mounted.find('input[name="domain"]')
+      .simulate('change', { target: { name: 'domain', value: '' } });
+    mounted.find('input[name="password"]')
+      .simulate('change', { target: { name: 'password', value: '' } });
+    mounted.find('form').simulate('submit');
+
+    expect(mounted.state().result).toMatchSnapshot();
+  });
 });
 
 describe('extractDomain', () => {

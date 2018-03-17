@@ -14,11 +14,15 @@ class App extends Component {
   }
 
   extractDomain(uri) {
-    return (new SPH_DomainExtractor()).extractDomain(uri);
+    if (uri) {
+      return (new SPH_DomainExtractor()).extractDomain(uri);
+    }
   }
 
   hashPassword(str, salt) {
-    return (new String(new SPH_HashedPassword(str, salt)));
+    if (str && salt) {
+      return (new String(new SPH_HashedPassword(str, salt)));
+    }
   }
 
   handleInputChange(event) {
@@ -30,10 +34,10 @@ class App extends Component {
   }
 
   handleFormSubmit(event) {
+    event.preventDefault();
     const domain = this.extractDomain(this.state.domain);
     const result = this.hashPassword(this.state.password, domain);
-    this.setState({ result: result });
-    event.preventDefault();
+    result && this.setState({ result: result });
   }
 
   render() {
