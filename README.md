@@ -35,6 +35,26 @@ Start the test runner:
 yarn test
 ```
 
+## Deploy with Heroku
+
+Create a new Heroku app with a buildpack for create-react-app:
+
+```
+heroku create $APP_NAME --buildpack https://github.com/mars/create-react-app-buildpack.git
+```
+
+Push the code from local `master` branch to `heroku` remote:
+
+```
+git push heroku master
+```
+
+Open the app in your browser:
+
+```
+heroku open
+```
+
 ## Acknowledgements
 
 Big thanks to Stanford PwdHash's project staff: [Dan Boneh](http://www.stanford.edu/~dabo), [Collin Jackson](http://crypto.stanford.edu/~collinj), [John Mitchell](http://theory.stanford.edu/people/jcm/home.html), Nick Miyake, and [Blake Ross](http://www.blakeross.com/).
