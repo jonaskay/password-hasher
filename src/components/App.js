@@ -15,13 +15,13 @@ class App extends Component {
 
   extractDomain(uri) {
     if (uri) {
-      return (new SPH_DomainExtractor()).extractDomain(uri);
+      return new SPH_DomainExtractor().extractDomain(uri);
     }
   }
 
   hashPassword(str, salt) {
     if (str && salt) {
-      return (new String(new SPH_HashedPassword(str, salt)));
+      return new String(new SPH_HashedPassword(str, salt));
     }
   }
 
@@ -47,10 +47,12 @@ class App extends Component {
         <PasswordForm onChange={this.handleInputChange} onSubmit={this.handleFormSubmit} />
         <PasswordResult result={this.state.result} />
         <footer className="App-footer">
-          <span>&copy; 2018 <a href="https://github.com/jonaskay">Jonas Kay</a></span>
-          <span style={{textAlign: 'right'}}>
+          <span>
+            &copy; 2018 <a href="https://github.com/jonaskay">Jonas Kay</a>
+          </span>
+          <span style={{ textAlign: 'right' }}>
             Based on <a href="https://crypto.stanford.edu/PwdHash/">PwdHash</a>
-            </span>
+          </span>
         </footer>
       </div>
     );

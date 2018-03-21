@@ -20,7 +20,13 @@ class PasswordResult extends Component {
   render() {
     return (
       <div className="PasswordResult">
-        <input type="text" value={this.props.result} ref={(input) => { this.textInput = input; }} />
+        <input
+          type="text"
+          value={this.props.result}
+          ref={input => {
+            this.textInput = input;
+          }}
+        />
       </div>
     );
   }

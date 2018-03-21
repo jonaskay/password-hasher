@@ -10,14 +10,16 @@ describe('<App />', () => {
   });
 
   it('handles a domain input change', () => {
-    mounted.find('input[name="domain"]')
+    mounted
+      .find('input[name="domain"]')
       .simulate('change', { target: { name: 'domain', value: 'foo' } });
 
     expect(mounted.state().domain).toBe('foo');
   });
 
   it('handles a password input change', () => {
-    mounted.find('input[name="password"]')
+    mounted
+      .find('input[name="password"]')
       .simulate('change', { target: { name: 'password', value: 'foo' } });
 
     expect(mounted.state().password).toBe('foo');
@@ -29,9 +31,11 @@ describe('<App />', () => {
   });
 
   it('handles an empty form submit', () => {
-    mounted.find('input[name="domain"]')
+    mounted
+      .find('input[name="domain"]')
       .simulate('change', { target: { name: 'domain', value: '' } });
-    mounted.find('input[name="password"]')
+    mounted
+      .find('input[name="password"]')
       .simulate('change', { target: { name: 'password', value: '' } });
     mounted.find('form').simulate('submit');
 

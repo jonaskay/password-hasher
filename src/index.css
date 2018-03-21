@@ -1,21 +1,29 @@
 body {
   background: #5f3dc4;
-  color: rgba(255,255,255,.9);
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   margin: 0;
   padding: 2rem 1rem;
 }
 
 a {
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 a:hover {
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
 }
 
-::-webkit-input-placeholder { color: rgba(0,0,0,.38); }
-::-moz-placeholder { color: rgba(0,0,0,.38); }
-:-ms-input-placeholder { color: rgba(0,0,0,.38); }
-:-moz-placeholder { color: rgba(0,0,0,.38); }
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
