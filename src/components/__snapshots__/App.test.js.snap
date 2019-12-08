@@ -40,11 +40,11 @@ exports[`<App /> renders correctly 1`] = `
     className="App-footer"
   >
     <span>
-      © 2018 
+      © 2019 
       <a
         href="https://github.com/jonaskay"
       >
-        Jonas Kay
+        jonaskay
       </a>
     </span>
     <span
