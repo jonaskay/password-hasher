@@ -26,6 +26,7 @@ class PasswordResult extends Component {
           ref={input => {
             this.textInput = input;
           }}
+          readOnly
         />
       </div>
     );

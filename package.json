@@ -24,7 +24,9 @@
     "pretty-quick": "^1.4.1"
   },
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "prettier": {
     "printWidth": 100,
